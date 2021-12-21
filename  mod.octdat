@@ -1,0 +1,17 @@
+{
+	id Oct.Rooms.Bunk
+	type RoomType
+
+	priority = 1003
+	name = Bunk Room
+    onlyInherit = true
+
+  // append this again so that just adding a second bed to a bedroom doesn't
+  // convert it into a bunk. Side effect: you can also assign an additional bed
+  // in your bedroom, but whatever, maybe Toe just likes having Flick stay in
+  // their room with them.
+	specifications =
+	[
+		<Oct.Rooms.Contents.Bed>
+	]
+}
